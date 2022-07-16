@@ -19,39 +19,36 @@
 
 <body>
     <!-- This is HEADER part -->
-    <header>
-        <div class="header container">
-            <a href="index.html" class="logo header__logo"><span class="logo__web">Web</span>Studio</a>
-            <nav>
-                <ul class="nav">
-                    <li class="nav__btn nav__btn--active"><a class="nav__link" href="index.html">Студия</a>
-                    </li>
-                    <li class="nav__btn"><a class="nav__link" href="portfolio.html">Портфолио</a></li>
-                    <li class="nav__btn"><a class="nav__link" href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="contact">
-                <li class="contact__item">
-                    <a href="mailto:info@devstudio.com" class="contact__link">
-                        <svg class="contact__icon" width="16px" height="12px">
-                            <use href="images/icons.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a>
+    <header class="header container">
+        <a href="index.html" class="logo header__logo"><span class="logo__web">Web</span>Studio</a>
+        <nav>
+            <ul class="nav">
+                <li class="nav__btn nav__btn--active"><a class="nav__link" href="index.html">Студия</a>
                 </li>
-                <li>
-                    <a href="tel:+380961111111" class="contact__link"><svg class="contact__icon" width="10px"
-                            height="16px">
-                            <use href="images/icons.svg#icon-Vector"></use>
-                        </svg>+380961111111</a>
-                </li>
+                <li class="nav__btn"><a class="nav__link" href="portfolio.html">Портфолио</a></li>
+                <li class="nav__btn"><a class="nav__link" href="#">Контакты</a></li>
             </ul>
-        </div>
+        </nav>
+        <ul class="contact">
+            <li class="contact__item">
+                <a href="mailto:info@devstudio.com" class="contact__link">
+                    <svg class="contact__icon" width="16px" height="12px">
+                        <use href="images/icons.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a>
+            </li>
+            <li>
+                <a href="tel:+380961111111" class="contact__link"><svg class="contact__icon" width="10px" height="16px">
+                        <use href="images/icons.svg#icon-Vector"></use>
+                    </svg>+380961111111</a>
+            </li>
+        </ul>
     </header>
     <!-- This is MAIN part -->
     <main>
         <!-- This is SECTION ONE part with HERO -->
         <section class="section-one">
             <div class="section-one__container">
-                <h1>
+                <h1 class="sectoin-one__header">
                     Эффективные решения<br />
                     для вашего бизнеса
                 </h1>
@@ -59,9 +56,9 @@
             </div>
         </section>
         <!-- This is SECTION TWO part with icons -->
-        <section class="section-two">
+        <section class="section-two container">
             <h2 class="hide">Особенности</h2>
-            <ul class="section-two__list container">
+            <ul class="section-two__list">
                 <li class="section-two__item">
                     <div class="section-two__container">
                         <svg width="70px" height="70px">
@@ -112,10 +109,10 @@
                 </li>
             </ul>
         </section>
-        <section class="section-two">
+        <section class="section-two container">
             <!-- This is section two part with images -->
             <h2 class="section-two__heading">Чем мы занимаемся</h2>
-            <ul class="section-two__images container">
+            <ul class="section-two__images">
                 <li class="section-two__img">
                     <img src=" images/img1.jpg" alt="keyboard typing" width="370" height="294" />
                     <h3 class="section-two__overlay">Десктопные приложения</h3>
@@ -250,41 +247,41 @@
             </ul>
         </section>
         <!-- This is SECTION FOUR part with clients -->
-        <section class="section-four">
+        <section class="section-four container">
             <div>
                 <h2 class="section-four__header">Постоянные клиенты</h2>
-                <div class="section-four__clients">
-                    <div class="section-four__item">
+                <ul class="section-four__clients">
+                    <li class="section-four__item">
                         <svg width="106px" height="60px">
                             <use href="images/icons.svg#icon-Logo1"></use>
                         </svg>
-                    </div>
-                    <div class="section-four__item">
+                    </li>
+                    <li class="section-four__item">
                         <svg width="106px" height="60px">
                             <use href="images/icons.svg#icon-Logo2"></use>
                         </svg>
-                    </div>
-                    <div class="section-four__item">
+                    </li>
+                    <li class="section-four__item">
                         <svg width="106px" height="60px">
                             <use href="images/icons.svg#icon-Logo3"></use>
                         </svg>
-                    </div>
-                    <div class="section-four__item">
+                    </li>
+                    <li class="section-four__item">
                         <svg width="106px" height="60px">
                             <use href="images/icons.svg#icon-Logo4"></use>
                         </svg>
-                    </div>
-                    <div class="section-four__item">
+                    </li>
+                    <li class="section-four__item">
                         <svg width="106px" height="60px">
                             <use href="images/icons.svg#icon-Logo5"></use>
                         </svg>
-                    </div>
-                    <div class="section-four__item">
+                    </li>
+                    <li class="section-four__item">
                         <svg width="106px" height="60px">
                             <use href="images/icons.svg#icon-Logo6"></use>
                         </svg>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -303,7 +300,7 @@
                         <li class="footer__li">
                             <a class="footer__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
-                        <li>
+                        <li class="footer__li">
                             <a class="footer__contact" href="tel:+380961111111">+380961111111</a>
                         </li>
                     </ul>

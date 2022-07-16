@@ -178,6 +178,7 @@ header {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: 0.03rem;
 }
 .logo__web {
   color: #2196f3;
@@ -237,7 +238,6 @@ header {
 
 .item__overlay {
   position: relative;
-  margin-bottom: 20px;
   background-color: var(--clr-background-5);
   overflow: hidden;
 }
@@ -257,13 +257,15 @@ header {
   transform: translateY(0);
 }
 
+.item__context {
+  padding: 20px 24px;
+}
+
 .item__name {
   color: #757575;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.88;
-  margin-left: 24px;
-  margin-bottom: 20px;
 }
 
 .item__text {
@@ -277,7 +279,6 @@ header {
   line-height: 2;
   font-weight: 700;
   letter-spacing: 0.06em;
-  margin-left: 24px;
   margin-bottom: 4px;
 }
 
@@ -329,8 +330,6 @@ header {
 
 .footer__contact {
   color: rgba(255, 255, 255, 0.6);
-  line-height: 1.71;
-  font-weight: 400;
 }
 .footer__contact:hover, .footer__contact:focus {
   color: #2196f3;
@@ -339,6 +338,13 @@ header {
 
 .footer__street {
   color: #ffffff;
+}
+
+.footer__contact,
+.footer__street {
+  line-height: 1.71;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .footer__li:not(:last-child) {

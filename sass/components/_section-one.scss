@@ -11,8 +11,6 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  max-width: 1600px;
-
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -20,7 +18,9 @@
 .section-one__container {
   color: getColor("font-3");
   text-align: center;
-  font-weight: 900;
+}
+
+.sectoin-one__header {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -29,8 +29,10 @@
 
 .button-hero {
   @extend %button-main;
+
   margin-top: $section-padding-2;
   background-color: getColor("primary");
+
   &:hover {
     background-color: getColor("secondary");
   }

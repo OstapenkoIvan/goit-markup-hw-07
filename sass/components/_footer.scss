@@ -17,8 +17,6 @@
 
 .footer__contact {
   color: getColor("font-4");
-  line-height: 1.71;
-  font-weight: 400;
 
   &:hover,
   &:focus {
@@ -29,6 +27,13 @@
 
 .footer__street {
   color: getColor("font-3");
+}
+
+.footer__contact,
+.footer__street {
+  line-height: 1.71;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .footer__li:not(:last-child) {

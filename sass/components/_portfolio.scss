@@ -60,7 +60,6 @@
 
 .item__overlay {
   position: relative;
-  margin-bottom: 20px;
   background-color: var(--clr-background-5);
   overflow: hidden;
 }
@@ -86,13 +85,15 @@
   }
 }
 
+.item__context {
+  padding: 20px 24px;
+}
+
 .item__name {
   color: getColor("font-2");
   font-size: 16px;
   font-weight: 400;
   line-height: 1.88;
-  margin-left: 24px;
-  margin-bottom: 20px;
 }
 
 .item__text {
@@ -106,6 +107,5 @@
   line-height: 2;
   font-weight: 700;
   letter-spacing: 0.06em;
-  margin-left: 24px;
   margin-bottom: 4px;
 }
