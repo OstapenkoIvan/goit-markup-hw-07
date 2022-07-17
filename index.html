@@ -19,29 +19,32 @@
 
 <body>
     <!-- This is HEADER part -->
-    <header class="header container">
-        <a href="index.html" class="logo header__logo"><span class="logo__web">Web</span>Studio</a>
-        <nav>
-            <ul class="nav">
-                <li class="nav__btn nav__btn--active"><a class="nav__link" href="index.html">Студия</a>
+    <header>
+        <div class="header container ">
+            <a href="index.html" class="logo header__logo"><span class="logo__web">Web</span>Studio</a>
+            <nav>
+                <ul class="nav">
+                    <li class="nav__btn nav__btn--active"><a class="nav__link" href="index.html">Студия</a>
+                    </li>
+                    <li class="nav__btn"><a class="nav__link" href="portfolio.html">Портфолио</a></li>
+                    <li class="nav__btn"><a class="nav__link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contact">
+                <li class="contact__item">
+                    <a href="mailto:info@devstudio.com" class="contact__link">
+                        <svg class="contact__icon" width="16px" height="12px">
+                            <use href="images/icons.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a>
                 </li>
-                <li class="nav__btn"><a class="nav__link" href="portfolio.html">Портфолио</a></li>
-                <li class="nav__btn"><a class="nav__link" href="#">Контакты</a></li>
+                <li>
+                    <a href="tel:+380961111111" class="contact__link"><svg class="contact__icon" width="10px"
+                            height="16px">
+                            <use href="images/icons.svg#icon-Vector"></use>
+                        </svg>+380961111111</a>
+                </li>
             </ul>
-        </nav>
-        <ul class="contact">
-            <li class="contact__item">
-                <a href="mailto:info@devstudio.com" class="contact__link">
-                    <svg class="contact__icon" width="16px" height="12px">
-                        <use href="images/icons.svg#icon-envelope"></use>
-                    </svg>info@devstudio.com</a>
-            </li>
-            <li>
-                <a href="tel:+380961111111" class="contact__link"><svg class="contact__icon" width="10px" height="16px">
-                        <use href="images/icons.svg#icon-Vector"></use>
-                    </svg>+380961111111</a>
-            </li>
-        </ul>
+        </div>
     </header>
     <!-- This is MAIN part -->
     <main>
@@ -56,76 +59,80 @@
             </div>
         </section>
         <!-- This is SECTION TWO part with icons -->
-        <section class="section-two container">
-            <h2 class="hide">Особенности</h2>
-            <ul class="section-two__list">
-                <li class="section-two__item">
-                    <div class="section-two__container">
-                        <svg width="70px" height="70px">
-                            <use href="images/icons.svg#icon-antenna-1"></use>
-                        </svg>
-                    </div>
-                    <h3 class="section-two__title">Внимание к деталям</h3>
-                    <p class="section-two__text">
-                        Идейные соображения, а также начало повседневной работы по
-                        формированию позиции.
-                    </p>
-                </li>
-                <li class="section-two__item">
-                    <div class="section-two__container">
-                        <svg width="70px" height="70px">
-                            <use href="images/icons.svg#icon-clock-1"></use>
-                        </svg>
-                    </div>
-                    <h3 class="section-two__title">Пунктуальность</h3>
-                    <p class="section-two__text">
-                        Задача организации, в особенности же рамки и место обучения кадров
-                        влечет за собой.
-                    </p>
-                </li>
-                <li class="section-two__item">
-                    <div class="section-two__container">
-                        <svg width="70px" height="70px">
-                            <use href="images/icons.svg#icon-diagram-1"></use>
-                        </svg>
-                    </div>
-                    <h3 class="section-two__title">Планирование</h3>
-                    <p class="section-two__text">
-                        Равным образом консультация с широким активом в значительной
-                        степени обуславливает.
-                    </p>
-                </li>
-                <li class="section-two__item">
-                    <div class="section-two__container">
-                        <svg width="70px" height="70px">
-                            <use href="images/icons.svg#icon-astronaut-1"></use>
-                        </svg>
-                    </div>
-                    <h3>Современные технологии</h3>
-                    <p class="section-two__text">
-                        Значимость этих проблем настолько очевидна, что реализация
-                        плановых заданий.
-                    </p>
-                </li>
-            </ul>
+        <section class="section-two">
+            <div class="container">
+                <h2 class="hide">Особенности</h2>
+                <ul class="section-two__list">
+                    <li class="section-two__item">
+                        <div class="section-two__container">
+                            <svg width="70px" height="70px">
+                                <use href="images/icons.svg#icon-antenna-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="section-two__title">Внимание к деталям</h3>
+                        <p class="section-two__text">
+                            Идейные соображения, а также начало повседневной работы по
+                            формированию позиции.
+                        </p>
+                    </li>
+                    <li class="section-two__item">
+                        <div class="section-two__container">
+                            <svg width="70px" height="70px">
+                                <use href="images/icons.svg#icon-clock-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="section-two__title">Пунктуальность</h3>
+                        <p class="section-two__text">
+                            Задача организации, в особенности же рамки и место обучения кадров
+                            влечет за собой.
+                        </p>
+                    </li>
+                    <li class="section-two__item">
+                        <div class="section-two__container">
+                            <svg width="70px" height="70px">
+                                <use href="images/icons.svg#icon-diagram-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="section-two__title">Планирование</h3>
+                        <p class="section-two__text">
+                            Равным образом консультация с широким активом в значительной
+                            степени обуславливает.
+                        </p>
+                    </li>
+                    <li class="section-two__item">
+                        <div class="section-two__container">
+                            <svg width="70px" height="70px">
+                                <use href="images/icons.svg#icon-astronaut-1"></use>
+                            </svg>
+                        </div>
+                        <h3>Современные технологии</h3>
+                        <p class="section-two__text">
+                            Значимость этих проблем настолько очевидна, что реализация
+                            плановых заданий.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="section-two container">
+        <section class="section-two">
             <!-- This is section two part with images -->
-            <h2 class="section-two__heading">Чем мы занимаемся</h2>
-            <ul class="section-two__images">
-                <li class="section-two__img">
-                    <img src=" images/img1.jpg" alt="keyboard typing" width="370" height="294" />
-                    <h3 class="section-two__overlay">Десктопные приложения</h3>
-                </li>
-                <li class="section-two__img">
-                    <img src=" images/img2.jpg" alt="phone staring" width="370" height="294" />
-                    <h3 class="section-two__overlay">Мобильные приложения</h3>
-                </li>
-                <li class="section-two__img">
-                    <img src=" images/img3.jpg" alt="tablet staring" width="370" height="294" />
-                    <h3 class="section-two__overlay">Дизайнерские решения</h3>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="section-two__heading">Чем мы занимаемся</h2>
+                <ul class="section-two__images">
+                    <li class="section-two__img">
+                        <img src=" images/img1.jpg" alt="keyboard typing" width="370" height="294" />
+                        <h3 class="section-two__overlay">Десктопные приложения</h3>
+                    </li>
+                    <li class="section-two__img">
+                        <img src=" images/img2.jpg" alt="phone staring" width="370" height="294" />
+                        <h3 class="section-two__overlay">Мобильные приложения</h3>
+                    </li>
+                    <li class="section-two__img">
+                        <img src=" images/img3.jpg" alt="tablet staring" width="370" height="294" />
+                        <h3 class="section-two__overlay">Дизайнерские решения</h3>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- This is SECTION THREE part with team -->
@@ -249,8 +256,8 @@
             </div>
         </section>
         <!-- This is SECTION FOUR part with clients -->
-        <section class="section-four container">
-            <div>
+        <section class="section-four">
+            <div class="container">
                 <h2 class="section-four__header">Постоянные клиенты</h2>
                 <ul class="section-four__clients">
                     <li class="section-four__item">
