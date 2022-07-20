@@ -19,30 +19,42 @@
 <body>
   <!-- This is HEADER part -->
   <header>
-    <div class="header container">
+    <nav class="header container ">
       <a href="index.html" class="logo header__logo"><span class="logo__web">Web</span>Studio</a>
-      <nav>
+      <button type="button" class="header__menu" data-menu-button>
+        <svg width="40" height="40" aria-label="переключатель мобильного меню">
+          <use class="icon-menu" href="images/icons.svg#icon-menu_40px"></use>
+          <use class="icon-close" href="images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <div class="header__block" data-menu>
         <ul class="nav">
           <li class="nav__btn"><a class="nav__link" href="index.html">Студия</a>
           </li>
           <li class="nav__btn nav__btn--active"><a class="nav__link" href="portfolio.html">Портфолио</a></li>
           <li class="nav__btn"><a class="nav__link" href="#">Контакты</a></li>
         </ul>
-      </nav>
-      <ul class="contact">
-        <li class="contact__item">
-          <a href="mailto:info@devstudio.com" class="contact__link">
-            <svg class="contact__icon" width="16px" height="12px">
-              <use href="images/icons.svg#icon-envelope"></use>
-            </svg>info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contact__link"><svg class="contact__icon" width="10px" height="16px">
-              <use href="images/icons.svg#icon-Vector"></use>
-            </svg>+380961111111</a>
-        </li>
-      </ul>
-    </div>
+        <ul class="contact">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link">
+              <svg class="contact__icon">
+                <use href="images/icons.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a>
+          </li>
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link"><svg class="contact__icon">
+                <use href="images/icons.svg#icon-Vector"></use>
+              </svg>+380961111111</a>
+          </li>
+        </ul>
+        <ul class="social">
+          <li class="social__item"><a class="social__link" href="www.instagram.com">Instagram</a></li>
+          <li class="social__item"><a class="social__link" href="twitter.com">Twitter</a></li>
+          <li class="social__item"><a class="social__link" href="facebook.com">Facebook</a></li>
+          <li class="social__item"><a class="social__link" href="linkedin.com">LinkedIn</a></li>
+        </ul>
+      </div>
+      </т>
   </header>
   <main>
     <!-- This is FILTER BUTTONS part -->
@@ -59,7 +71,30 @@
         <ul class="portfolio__container">
           <li class="item">
             <div class="item__overlay">
-              <img src="images/portfolio1.jpg" alt="laptop" />
+              <picture>
+                <source srcset=" 
+                images/portfolio/portfolio-370px/portfolio-one-370.webp 1x, 
+                images/portfolio/portfolio-370px/portfolio-one-370@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1200px)">
+                <source srcset="
+                images/portfolio/portfolio-370px/portfolio-one-370.jpg 1x, 
+                images/portfolio/portfolio-370px/portfolio-one-370@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-354px/portfolio-one-354.webp 1x, 
+                    images/portfolio/portfolio-354px/portfolio-one-354@2x.webp 2x" type="image/webp"
+                  media="(min-width: 768px)">
+                <source srcset="
+                images/portfolio/portfolio-354px/portfolio-one-354.jpg 1x, 
+                images/portfolio/portfolio-354px/portfolio-one-354@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-450px/portfolio-one-450.webp 1x, 
+                    images/portfolio/portfolio-450px/portfolio-one-450@2x.webp 2x" type="image/webp"
+                  media="(max-width: 767px)">
+                <source srcset="
+                    images/portfolio/portfolio-450px/portfolio-one-450.jpg 1x, 
+                    images/portfolio/portfolio-450px/portfolio-one-450@2x.jpg 2x" media="(max-width: 767px)">
+                <img src="images/portfolio/portfolio-450px/portfolio-one-450.jpg" alt="laptop" />
+              </picture>
               <div class="item__container">
                 <p class="item__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                   сервисов. Все это позволит
@@ -73,7 +108,30 @@
           </li>
           <li class="item">
             <div class="item__overlay">
-              <img src="images/portfolio2.jpg" alt="basketball" />
+              <picture>
+                <source srcset=" 
+                images/portfolio/portfolio-370px/portfolio-two-370.webp 1x, 
+                images/portfolio/portfolio-370px/portfolio-two-370@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1200px)">
+                <source srcset="
+                images/portfolio/portfolio-370px/portfolio-two-370.jpg 1x, 
+                images/portfolio/portfolio-370px/portfolio-two-370@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-354px/portfolio-two-354.webp 1x, 
+                    images/portfolio/portfolio-354px/portfolio-two-354@2x.webp 2x" type="image/webp"
+                  media="(min-width: 768px)">
+                <source srcset="
+                images/portfolio/portfolio-354px/portfolio-two-354.jpg 1x, 
+                images/portfolio/portfolio-354px/portfolio-two-354@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-450px/portfolio-two-450.webp 1x, 
+                    images/portfolio/portfolio-450px/portfolio-two-450@2x.webp 2x" type="image/webp"
+                  media="(max-width: 767px)">
+                <source srcset="
+                    images/portfolio/portfolio-450px/portfolio-two-450.jpg 1x, 
+                    images/portfolio/portfolio-450px/portfolio-two-450@2x.jpg 2x" media="(max-width: 767px)">
+                <img src="images/portfolio/portfolio-450px/portfolio-two-450.jpg" alt="basketball" />
+              </picture>
               <div class="item__container">
                 <p class="item__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                   сервисов. Все это позволит
@@ -87,7 +145,30 @@
           </li>
           <li class="item">
             <div class="item__overlay">
-              <img src="images/portfolio3.jpg" alt="seafood restaurant" />
+              <picture>
+                <source srcset=" 
+                images/portfolio/portfolio-370px/portfolio-three-370.webp 1x, 
+                images/portfolio/portfolio-370px/portfolio-three-370@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1200px)">
+                <source srcset="
+                images/portfolio/portfolio-370px/portfolio-three-370.jpg 1x, 
+                images/portfolio/portfolio-370px/portfolio-three-370@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-354px/portfolio-three-354.webp 1x, 
+                    images/portfolio/portfolio-354px/portfolio-three-354@2x.webp 2x" type="image/webp"
+                  media="(min-width: 768px)">
+                <source srcset="
+                images/portfolio/portfolio-354px/portfolio-three-354.jpg 1x, 
+                images/portfolio/portfolio-354px/portfolio-three-354@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-450px/portfolio-three-450.webp 1x, 
+                    images/portfolio/portfolio-450px/portfolio-three-450@2x.webp 2x" type="image/webp"
+                  media="(max-width: 767px)">
+                <source srcset="
+                    images/portfolio/portfolio-450px/portfolio-three-450.jpg 1x, 
+                    images/portfolio/portfolio-450px/portfolio-three-450@2x.jpg 2x" media="(max-width: 767px)">
+                <img src="images/portfolio/portfolio-450px/portfolio-three-450.jpg" alt="seafood restaurant" />
+              </picture>
               <div class="item__container">
                 <p class="item__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                   сервисов. Все это позволит
@@ -101,7 +182,30 @@
           </li>
           <li class="item">
             <div class="item__overlay">
-              <img src="images/portfolio4.jpg" alt="headphones" />
+              <picture>
+                <source srcset=" 
+                images/portfolio/portfolio-370px/portfolio-four-370.webp 1x, 
+                images/portfolio/portfolio-370px/portfolio-four-370@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1200px)">
+                <source srcset="
+                images/portfolio/portfolio-370px/portfolio-four-370.jpg 1x, 
+                images/portfolio/portfolio-370px/portfolio-four-370@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-354px/portfolio-four-354.webp 1x, 
+                    images/portfolio/portfolio-354px/portfolio-four-354@2x.webp 2x" type="image/webp"
+                  media="(min-width: 768px)">
+                <source srcset="
+                images/portfolio/portfolio-354px/portfolio-four-354.jpg 1x, 
+                images/portfolio/portfolio-354px/portfolio-four-354@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-450px/portfolio-four-450.webp 1x, 
+                    images/portfolio/portfolio-450px/portfolio-four-450@2x.webp 2x" type="image/webp"
+                  media="(max-width: 767px)">
+                <source srcset="
+                    images/portfolio/portfolio-450px/portfolio-four-450.jpg 1x, 
+                    images/portfolio/portfolio-450px/portfolio-four-450@2x.jpg 2x" media="(max-width: 767px)">
+                <img src="images/portfolio/portfolio-450px/portfolio-four-450.jpg" alt="headphones" />
+              </picture>
               <div class="item__container">
                 <p class="item__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                   сервисов. Все это позволит
@@ -115,7 +219,30 @@
           </li>
           <li class="item">
             <div class="item__overlay">
-              <img src="images/portfolio5.jpg" alt="boxes" />
+              <picture>
+                <source srcset=" 
+                images/portfolio/portfolio-370px/portfolio-five-370.webp 1x, 
+                images/portfolio/portfolio-370px/portfolio-five-370@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1200px)">
+                <source srcset="
+                images/portfolio/portfolio-370px/portfolio-five-370.jpg 1x, 
+                images/portfolio/portfolio-370px/portfolio-five-370@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-354px/portfolio-five-354.webp 1x, 
+                    images/portfolio/portfolio-354px/portfolio-five-354@2x.webp 2x" type="image/webp"
+                  media="(min-width: 768px)">
+                <source srcset="
+                images/portfolio/portfolio-354px/portfolio-five-354.jpg 1x, 
+                images/portfolio/portfolio-354px/portfolio-five-354@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-450px/portfolio-five-450.webp 1x, 
+                    images/portfolio/portfolio-450px/portfolio-five-450@2x.webp 2x" type="image/webp"
+                  media="(max-width: 767px)">
+                <source srcset="
+                    images/portfolio/portfolio-450px/portfolio-five-450.jpg 1x, 
+                    images/portfolio/portfolio-450px/portfolio-five-450@2x.jpg 2x" media="(max-width: 767px)">
+                <img src="images/portfolio/portfolio-450px/portfolio-five-450.jpg" alt="boxes" />
+              </picture>
               <div class="item__container">
                 <p class="item__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                   сервисов. Все это позволит
@@ -129,7 +256,30 @@
           </li>
           <li class="item">
             <div class="item__overlay">
-              <img src="images/portfolio6.jpg" alt="imac" />
+              <picture>
+                <source srcset=" 
+                images/portfolio/portfolio-370px/portfolio-six-370.webp 1x, 
+                images/portfolio/portfolio-370px/portfolio-six-370@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1200px)">
+                <source srcset="
+                images/portfolio/portfolio-370px/portfolio-six-370.jpg 1x, 
+                images/portfolio/portfolio-370px/portfolio-six-370@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-354px/portfolio-six-354.webp 1x, 
+                    images/portfolio/portfolio-354px/portfolio-six-354@2x.webp 2x" type="image/webp"
+                  media="(min-width: 768px)">
+                <source srcset="
+                images/portfolio/portfolio-354px/portfolio-six-354.jpg 1x, 
+                images/portfolio/portfolio-354px/portfolio-six-354@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-450px/portfolio-six-450.webp 1x, 
+                    images/portfolio/portfolio-450px/portfolio-six-450@2x.webp 2x" type="image/webp"
+                  media="(max-width: 767px)">
+                <source srcset="
+                    images/portfolio/portfolio-450px/portfolio-six-450.jpg 1x, 
+                    images/portfolio/portfolio-450px/portfolio-six-450@2x.jpg 2x" media="(max-width: 767px)">
+                <img src="images/portfolio/portfolio-450px/portfolio-six-450.jpg" alt="imac" />
+              </picture>
               <div class="item__container">
                 <p class="item__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                   сервисов. Все это позволит
@@ -144,7 +294,30 @@
           </li>
           <li class="item">
             <div class="item__overlay">
-              <img src="images/portfolio7.jpg" alt="Book" />
+              <picture>
+                <source srcset=" 
+                images/portfolio/portfolio-370px/portfolio-seven-370.webp 1x, 
+                images/portfolio/portfolio-370px/portfolio-seven-370@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1200px)">
+                <source srcset="
+                images/portfolio/portfolio-370px/portfolio-seven-370.jpg 1x, 
+                images/portfolio/portfolio-370px/portfolio-seven-370@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-354px/portfolio-seven-354.webp 1x, 
+                    images/portfolio/portfolio-354px/portfolio-seven-354@2x.webp 2x" type="image/webp"
+                  media="(min-width: 768px)">
+                <source srcset="
+                images/portfolio/portfolio-354px/portfolio-seven-354.jpg 1x, 
+                images/portfolio/portfolio-354px/portfolio-seven-354@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-450px/portfolio-seven-450.webp 1x, 
+                    images/portfolio/portfolio-450px/portfolio-seven-450@2x.webp 2x" type="image/webp"
+                  media="(max-width: 767px)">
+                <source srcset="
+                    images/portfolio/portfolio-450px/portfolio-seven-450.jpg 1x, 
+                    images/portfolio/portfolio-450px/portfolio-seven-450@2x.jpg 2x" media="(max-width: 767px)">
+                <img src="images/portfolio/portfolio-450px/portfolio-seven-450.jpg" alt="Book" />
+              </picture>
               <div class="item__container">
                 <p class="item__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                   сервисов. Все это позволит
@@ -158,7 +331,30 @@
           </li>
           <li class="item">
             <div class="item__overlay">
-              <img src="images/portfolio8.jpg" alt="LAB PROJECT" />
+              <picture>
+                <source srcset=" 
+                images/portfolio/portfolio-370px/portfolio-eight-370.webp 1x, 
+                images/portfolio/portfolio-370px/portfolio-eight-370@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1200px)">
+                <source srcset="
+                images/portfolio/portfolio-370px/portfolio-eight-370.jpg 1x, 
+                images/portfolio/portfolio-370px/portfolio-eight-370@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-354px/portfolio-eight-354.webp 1x, 
+                    images/portfolio/portfolio-354px/portfolio-eight-354@2x.webp 2x" type="image/webp"
+                  media="(min-width: 768px)">
+                <source srcset="
+                images/portfolio/portfolio-354px/portfolio-eight-354.jpg 1x, 
+                images/portfolio/portfolio-354px/portfolio-eight-354@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-450px/portfolio-eight-450.webp 1x, 
+                    images/portfolio/portfolio-450px/portfolio-eight-450@2x.webp 2x" type="image/webp"
+                  media="(max-width: 767px)">
+                <source srcset="
+                    images/portfolio/portfolio-450px/portfolio-eight-450.jpg 1x, 
+                    images/portfolio/portfolio-450px/portfolio-eight-450@2x.jpg 2x" media="(max-width: 767px)">
+                <img src="images/portfolio/portfolio-450px/portfolio-eight-450.jpg" alt="Lab Project" />
+              </picture>
               <div class="item__container">
                 <p class="item__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                   сервисов. Все это позволит
@@ -172,7 +368,30 @@
           </li>
           <li class="item">
             <div class="item__overlay">
-              <img src="images/portfolio9.jpg" alt="another laptop" />
+              <picture>
+                <source srcset=" 
+                images/portfolio/portfolio-370px/portfolio-nine-370.webp 1x, 
+                images/portfolio/portfolio-370px/portfolio-nine-370@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1200px)">
+                <source srcset="
+                images/portfolio/portfolio-370px/portfolio-nine-370.jpg 1x, 
+                images/portfolio/portfolio-370px/portfolio-nine-370@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-354px/portfolio-nine-354.webp 1x, 
+                    images/portfolio/portfolio-354px/portfolio-nine-354@2x.webp 2x" type="image/webp"
+                  media="(min-width: 768px)">
+                <source srcset="
+                images/portfolio/portfolio-354px/portfolio-nine-354.jpg 1x, 
+                images/portfolio/portfolio-354px/portfolio-nine-354@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset=" 
+                    images/portfolio/portfolio-450px/portfolio-nine-450.webp 1x, 
+                    images/portfolio/portfolio-450px/portfolio-nine-450@2x.webp 2x" type="image/webp"
+                  media="(max-width: 767px)">
+                <source srcset="
+                    images/portfolio/portfolio-450px/portfolio-nine-450.jpg 1x, 
+                    images/portfolio/portfolio-450px/portfolio-nine-450@2x.jpg 2x" media="(max-width: 767px)">
+                <img src="images/portfolio/portfolio-450px/portfolio-nine-450.jpg" alt="another laptop" />
+              </picture>
               <div class="item__container">
                 <p class="item__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                   сервисов. Все это позволит
@@ -192,64 +411,70 @@
   <!-- This is FOOTER part -->
   <footer class="footer">
     <div class="container footer__sections">
-      <section>
-        <a href="index.html" class="logo footer__logo"><span class="logo__web">Web</span>Studio</a>
+      <section class="footer-address">
+        <a href="index.html" class="logo address__logo"><span class="logo__web">Web</span>Studio</a>
         <address>
-          <ul>
-            <li class="footer__li">
-              <a class="footer__street" href="http://maps.google.com" target="_blank" rel="noopener noreferrer">г. Киев,
+          <ul class="address">
+            <li class="address__li">
+              <a class="footer__street" href="https://goo.gl/maps/dMaArt2xvUtYKD9Z6" target="_blank"
+                rel="noopener noreferrer nofollow">г. Киев,
                 пр-т Леси Украинки, 26</a>
             </li>
-            <li class="footer__li">
-              <a class="footer__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="address__li">
+              <a class="address__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="footer__li">
-              <a class="footer__contact" href="tel:+380961111111">+380961111111</a>
+            <li class="address__li">
+              <a class="address__contact" href="tel:+380961111111">+380961111111</a>
             </li>
           </ul>
         </address>
       </section>
       <section class="footer__social">
         <h2 class="footer__title">присоединяйтесь</h2>
-        <div class="social-icons">
-          <div class="social-icons__thumb footer__icon">
-            <svg class="social-icons__img" width="20px" height="20px">
-              <use href="images/icons.svg#icon-instagram-1"></use>
-            </svg>
-          </div>
-          <div class="social-icons__thumb footer__icon">
-            <svg class="social-icons__img" width="20px" height="20px">
-              <use href="images/icons.svg#icon-twitter-1"></use>
-            </svg>
-          </div>
-          <div class="social-icons__thumb footer__icon">
-            <svg class="social-icons__img" width="20px" height="20px">
-              <use href="images/icons.svg#icon-facebook-1"></use>
-            </svg>
-          </div>
-          <div class="social-icons__thumb footer__icon">
-            <svg class="social-icons__img" width="20px" height="20px">
-              <use href="images/icons.svg#icon-linkedin-1"></use>
-            </svg>
-          </div>
-        </div>
+        <ul class="social-icons">
+          <li class="social-icons__thumb footer__icon"><a class="social-icons__link" href="instagram.com">
+              <svg class="social-icons__img" width="20px" height="20px">
+                <use href="images/icons.svg#icon-instagram-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__thumb footer__icon"><a class="social-icons__link" href="twitter.com">
+              <svg class="social-icons__img" width="20px" height="20px">
+                <use href="images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__thumb footer__icon"><a class="social-icons__link" href="facebook.com">
+              <svg class="social-icons__img" width="20px" height="20px">
+                <use href="images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__thumb footer__icon"><a class="social-icons__link" href="linkedin.com">
+              <svg class="social-icons__img" width="20px" height="20px">
+                <use href="images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </section>
       <section class="footer-subscribe">
         <h2 class="footer__title">подпишись на рассылку</h2>
-        <div class="footer-subscribe__thumb">
-          <form>
-            <input type="mail" placeholder="E-mail" class="footer-subscribe__input">
-            <button type="submit" class="footer-subscribe__submit">Подписаться
-              <svg width="24px" height="24px">
-                <use href="images/icons.svg#icon-icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+
+        <form class="subscribe-thumb">
+          <input type="mail" placeholder="E-mail" class="subscribe-thumb__input">
+          <button type="submit" class="subscribe-thumb__submit">Подписаться
+            <svg class="subscribe-thumb__icon" width="24px" height="24px">
+              <use href="images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+
       </section>
     </div>
   </footer>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

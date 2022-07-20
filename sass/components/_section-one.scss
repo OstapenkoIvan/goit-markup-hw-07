@@ -6,13 +6,75 @@
       rgba(0, 0, 0, 0.3) 50%,
       rgba(0, 0, 0, 0.3) 100%
     ),
-    url("../images/hero.jpeg");
+    url("../images/hero/hero-480.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0.3) 100%
+      ),
+      url("../images/hero/hero-480@2x.jpg");
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0.3) 100%
+      ),
+      url("../images/hero/hero-768.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.3) 0%,
+          rgba(0, 0, 0, 0.3) 50%,
+          rgba(0, 0, 0, 0.3) 100%
+        ),
+        url("../images/hero/hero-768@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0.3) 100%
+      ),
+      url("../images/hero/hero-1600.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.3) 0%,
+          rgba(0, 0, 0, 0.3) 50%,
+          rgba(0, 0, 0, 0.3) 100%
+        ),
+        url("../images/hero/hero-1600@2x.jpg");
+    }
+  }
 }
 
 .section-one__container {
@@ -25,6 +87,11 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.615;
+  }
 }
 
 .button-hero {
@@ -33,7 +100,8 @@
   margin-top: $section-padding-2;
   background-color: getColor("primary");
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: getColor("secondary");
   }
 }

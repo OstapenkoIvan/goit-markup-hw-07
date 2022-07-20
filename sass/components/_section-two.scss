@@ -1,26 +1,69 @@
 .section-two {
-  padding-top: $section-padding;
+  @media screen and (max-width: 1199px) {
+    padding-top: $section-padding-60;
+    padding-bottom: $section-padding-60;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+  }
 
   & + & {
-    padding-bottom: $section-padding;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 0;
+    }
   }
 }
 
 .section-two__list {
-  display: flex;
-  flex-basis: calc(100% - 90px) / 4;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
+.section-two__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - $section-padding-2) / 2);
+
+    &:nth-child(2n + 1) {
+      margin-right: $section-padding-2;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: $section-padding-2;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-right: $section-padding-2;
+    }
+  }
+}
 .section-two__container {
-  padding: 25px 100px;
-  background-color: getColor("bcknd-2");
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
 
-.section-two__item:not(:last-child) {
-  margin-right: $section-padding-2;
+  background-color: getColor("bcknd-2");
+  margin-bottom: $section-padding-2;
+  border-radius: 4px;
 }
 
 .section-two__title {
@@ -28,6 +71,10 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.172;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .section-two__text {
@@ -63,6 +110,7 @@
   text-align: center;
   padding-top: 27px;
   padding-bottom: 27px;
+  font-size: inherit;
   text-transform: uppercase;
   color: getColor("font-3");
   background-color: getColor("bcknd-4");

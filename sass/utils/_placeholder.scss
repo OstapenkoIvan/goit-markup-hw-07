@@ -3,7 +3,11 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 1.166;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 %button-main {
@@ -28,6 +32,8 @@
   border: none;
 
   cursor: pointer;
+
+  transition: background-color 250ms $cubic-1;
 }
 
 %form__text {
